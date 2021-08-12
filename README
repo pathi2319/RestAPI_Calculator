@@ -1,0 +1,24 @@
+Step1:
+  Install all the requirements for the project (django,django_rest framework and all.)
+Step2:
+  Create a project and along with its inner applications(TestAPI which is for creating API ,Test APP which is for consuming the API service)
+Step3:
+   Did all the migrations and create superUser along with its username and password..
+Step4:
+   Firstly developed TestAPI which is for  creating the API service along with its required logic and run the server and tried with
+   client code,
+
+     import requests
+     import json
+     data1={'a':10,'b':20}
+     Base_url='http://localhost:8000/'
+     endpoint='api/'
+     r=requests.get(Base_url+endpoint,data=json.dumps(data1))
+     print(r.json())
+
+Step5:
+   After completion of the API service just implemented a TestAPP application for consuming the service of the RestAPI by using the
+   UI technologies.
+Step6:
+   Given correct navigation to TestAPI to TestAPP and update all the configuration accourding to settings.py file.
+
